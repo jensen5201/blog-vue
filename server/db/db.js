@@ -80,7 +80,7 @@ const initialize = () => {
     })
 }
 
-mongoose.connect('mongodb://127.0.0.1/my-blog')
+mongoose.connect('mongodb://127.0.0.1/my-blog',{useMongoClient:true})
 
 const db = mongoose.connection
 
